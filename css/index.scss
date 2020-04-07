@@ -1,0 +1,25 @@
+@import "import/_var.scss";
+
+* {
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth
+}
+body {
+    margin: 0;
+}
+
+
+@import "import/_navbar.scss";
+
+// @import "import/_section_1.scss";
+
+// @import "import/_section_2.scss";
+
+// @import "import/_section_3.scss";
+
+// @import "import/_section_4.scss";
+
+// @import "import/_footer.scss";

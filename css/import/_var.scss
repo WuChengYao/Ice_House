@@ -1,0 +1,24 @@
+@mixin container() {
+    width: 1440px;
+    margin: 0 auto;
+
+    @media (max-width: 1440px) {
+        width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 572px) {
+        width: 100%;
+    }
+}
