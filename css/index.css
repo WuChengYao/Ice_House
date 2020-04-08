@@ -1,10 +1,11 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 html {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Helvetica", "Arial", "LiHei Pro", "微軟正黑體", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -15,6 +16,10 @@ body {
 nav {
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 nav .navbar_container {
@@ -355,7 +360,7 @@ nav .navbar_container .rwd_navbar_burger .burger:nth-child(3).burger_3 {
 nav .navbar_container .rwd_navbar_menu_burger {
   width: 100%;
   position: absolute;
-  top: 70px;
+  top: 73.5px;
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
@@ -399,5 +404,97 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a {
 nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   background: #fff;
   color: #000;
+}
+
+.section_1 .section_1_container {
+  width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 70px;
+}
+
+@media (max-width: 1440px) {
+  .section_1 .section_1_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section_1 .section_1_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .section_1 .section_1_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_1 .section_1_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 572px) {
+  .section_1 .section_1_container {
+    width: 100%;
+  }
+}
+
+.section_1 .section_1_container .section_1_l {
+  position: absolute;
+  border-radius: 5px;
+  color: #fff;
+  top: 70px;
+  left: 0;
+  width: 30%;
+  padding: 100px 30px;
+  text-align: center;
+}
+
+.section_1 .section_1_container .section_1_l h1 {
+  font-size: 60px;
+  margin: 0 0 30px 0;
+  letter-spacing: 16px;
+  text-shadow: -1px -2px 3px #fff;
+  animation: section_1_l_h1 2S alternate-reverse infinite ease-in-out;
+}
+
+@-webkit-keyframes section_1_l_h1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+@keyframes section_1_l_h1 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.section_1 .section_1_container .section_1_l h3,
+.section_1 .section_1_container .section_1_l p {
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 6px;
+}
+
+.section_1 .section_1_container .section_1_r {
+  width: 100%;
+}
+
+.section_1 .section_1_container .section_1_r img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */
