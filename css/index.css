@@ -362,7 +362,7 @@ nav .navbar_container .rwd_navbar_menu_burger {
   position: absolute;
   top: 73.5px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 99;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
@@ -413,7 +413,7 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  padding-top: 70px;
+  padding-top: 74px;
 }
 
 @media (max-width: 1440px) {
@@ -446,6 +446,13 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   }
 }
 
+@media (max-width: 780px) {
+  .section_1 .section_1_container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .section_1 .section_1_container .section_1_l {
   position: absolute;
   border-radius: 5px;
@@ -455,6 +462,17 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   width: 30%;
   padding: 100px 30px;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+  .section_1 .section_1_container .section_1_l {
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ffdd), to(rgba(255, 255, 255, 0.3)));
+    background: linear-gradient(#00ffdd, rgba(255, 255, 255, 0.3));
+    width: 100%;
+    color: #000;
+    position: unset;
+    padding: 50px 20px;
+  }
 }
 
 .section_1 .section_1_container .section_1_l h1 {
@@ -490,11 +508,57 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   letter-spacing: 6px;
 }
 
+@media (max-width: 985px) {
+  .section_1 .section_1_container .section_1_l h3,
+  .section_1 .section_1_container .section_1_l p {
+    letter-spacing: 1px;
+  }
+}
+
 .section_1 .section_1_container .section_1_r {
   width: 100%;
+  height: 50vh;
+}
+
+@media (max-width: 780px) {
+  .section_1 .section_1_container .section_1_r {
+    height: unset;
+  }
 }
 
 .section_1 .section_1_container .section_1_r img {
   width: 100%;
+}
+
+.section_2 {
+  width: 100%;
+  height: 100vh;
+  background: url("../../images/section_2/section_2.png") center/cover no-repeat fixed;
+}
+
+@media (max-width: 960px) {
+  .section_2 {
+    background-attachment: scroll;
+  }
+}
+
+.section_2 .section_2_container {
+  padding-top: 74px;
+}
+
+.section_3 {
+  width: 100%;
+  height: 100vh;
+  background: url("../../images/section_2/section_2.png") center/cover no-repeat fixed;
+}
+
+@media (max-width: 960px) {
+  .section_3 {
+    background-attachment: scroll;
+  }
+}
+
+.section_3 .section_3_container {
+  padding-top: 74px;
 }
 /*# sourceMappingURL=index.css.map */

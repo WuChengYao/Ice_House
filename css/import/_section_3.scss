@@ -1,0 +1,14 @@
+.section_3 {
+    width: 100%;
+    // 假高
+    height: 100vh;
+    background: url('../../images/section_2/section_2.png') center / cover no-repeat fixed;
+
+    @media (max-width: 960px) {
+        background-attachment: scroll;
+    }
+
+    .section_3_container {
+        padding-top: 74px;
+    }
+}
