@@ -1,6 +1,5 @@
 .section_2 {
     width: 100%;
-    // background: url('../../images/section_2/section_2.png') center / cover no-repeat fixed;
 
     @media (max-width: 960px) {
         background-attachment: scroll;
@@ -9,13 +8,96 @@
     .section_2_container {
         @include container();
         padding-top: 74px;
-        // 假高
-        // height: 100vh;
+        position: relative;
+
 
         .section_2_l {
-            img {}
+            width: 72.38372093%;
+            margin-left: auto;
+            position: relative;
+            z-index: -2;
+
+            @media (max-width: 900px) {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border: 0;
+                vertical-align: top;
+            }
         }
 
-        .section_2_r {}
+        .section_2_r {
+            position: absolute;
+            top: 35px;
+            left: 0;
+
+            @media (max-width: 900px) {
+                padding: 40px 40px 0;
+                position: relative;
+                top: auto;
+                left: auto;
+            }
+
+            @media(max-width: 640px) {
+                padding: 40px 15px 0;
+            }
+
+            h2 {}
+
+            p {}
+
+            .section_2_r_border {
+                background: rgba(238, 238, 238, 0.7);
+                width: 650px;
+                height: 650px;
+                animation: morphing 16s linear infinite;
+                position: absolute;
+                top: -25%;
+                left: -25%;
+                z-index: -1;
+
+                @keyframes morphing {
+                    0% {
+                        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+                    }
+
+                    12.5% {
+                        border-radius: 40% 70% 80% 50% / 80% 40% 60% 50%;
+                    }
+
+                    25% {
+                        border-radius: 70% 60% 60% 90% / 70% 80% 40% 90%;
+                    }
+
+                    37.5% {
+                        border-radius: 50% 50% 80% 40% / 50% 40% 60% 50%;
+                    }
+
+                    50% {
+                        border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%;
+                    }
+
+                    62.5% {
+                        border-radius: 40% 50% 50% 40% / 50% 70% 60% 50%;
+                    }
+
+                    75% {
+                        border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%;
+                    }
+
+                    87.5% {
+                        border-radius: 50% 70% 50% 40% / 80% 40% 60% 50%;
+                    }
+
+                    100% {
+                        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+                    }
+                }
+            }
+        }
     }
 }
