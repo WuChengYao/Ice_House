@@ -532,6 +532,7 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
 
 .section_2 {
   width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 960px) {
@@ -578,7 +579,7 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
 }
 
 .section_2 .section_2_container .section_2_l {
-  width: 72.38372093%;
+  width: 60%;
   margin-left: auto;
   position: relative;
   z-index: -2;
@@ -617,6 +618,97 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   .section_2 .section_2_container .section_2_r {
     padding: 40px 15px 0;
   }
+}
+
+.section_2 .section_2_container .section_2_r h2 {
+  margin-bottom: 47px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  font-size: 3.1rem;
+  color: #1f211c;
+}
+
+@media (max-width: 640px) {
+  .section_2 .section_2_container .section_2_r h2 {
+    margin-bottom: 23px;
+    font-size: 2.4rem;
+  }
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(1) {
+  max-width: 460px;
+  margin-bottom: 60px;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .section_2 .section_2_container .section_2_r p:nth-child(1) {
+    max-width: inherit;
+  }
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a {
+  padding-right: 110px;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a .arrow {
+  width: 75px;
+  height: 7px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+@media (max-width: 640px) {
+  .section_2 .section_2_container .section_2_r p:nth-child(2) a .arrow {
+    width: 50px;
+  }
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a .arrow ::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 7px;
+  background: url("../../images/section_2/arrow01.png") no-repeat right top;
+  background-size: 75px auto;
+}
+
+.section_2 .section_2_container .section_2_r p:nth-child(2) a .arrow ::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 7px;
+  background: url("../../images/section_2/arrow01.png") no-repeat right top;
+  background-size: 75px auto;
 }
 
 .section_2 .section_2_container .section_2_r .section_2_r_border {
@@ -688,6 +780,13 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   }
   100% {
     border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .section_2 .section_2_container .section_2_r .section_2_r_border {
+    width: 300px;
+    height: 300px;
   }
 }
 
