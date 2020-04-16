@@ -33,7 +33,7 @@
 
         .section_2_r {
             position: absolute;
-            top: 35px;
+            top: 0;
             left: 0;
 
             @media (max-width: 900px) {
@@ -48,20 +48,21 @@
             }
 
             h2 {
-                margin-bottom: 47px;
+                margin: 0;
+                padding-top: 70px;
+                padding-bottom: 70px;
                 font-weight: 600;
                 letter-spacing: 2px;
-                line-height: 1.8;
                 font-size: 3.1rem;
                 color: #1f211c;
 
                 @media (max-width: 640px) {
-                    margin-bottom: 23px;
+                    margin-top: 23px;
                     font-size: 2.4rem;
                 }
             }
 
-            p:nth-child(1) {
+            :nth-child(2) {
                 max-width: 460px;
                 margin-bottom: 60px;
                 line-height: 2;
@@ -71,7 +72,7 @@
                 }
             }
 
-            p:nth-child(2) {
+            :nth-child(3) {
                 font-weight: 900;
                 letter-spacing: 2px;
                 font-size: 1.6rem;
@@ -104,7 +105,7 @@
                             width: 50px;
                         }
 
-                        ::before {
+                        &::after {
                             content: '';
                             display: block;
                             position: absolute;
@@ -116,7 +117,7 @@
                             background-size: 75px auto;
                         }
 
-                        ::after {
+                        &::before {
                             content: '';
                             display: block;
                             position: absolute;
@@ -137,7 +138,7 @@
                 height: 650px;
                 animation: morphing 16s linear infinite;
                 position: absolute;
-                top: -25%;
+                top: 15%;
                 left: -25%;
                 z-index: -1;
 
