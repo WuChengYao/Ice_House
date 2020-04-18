@@ -2,10 +2,6 @@
     width: 100%;
     overflow: hidden;
 
-    @media (max-width: 960px) {
-        background-attachment: scroll;
-    }
-
     .section_2_container {
         @include container();
         padding-top: 74px;
@@ -19,8 +15,7 @@
             z-index: -2;
 
             @media (max-width: 900px) {
-                width: 100%;
-                margin-left: 0;
+                display: none;
             }
 
             img {
@@ -33,11 +28,52 @@
 
         .section_2_r {
             position: absolute;
-            top: 0;
+            top: 25%;
             left: 0;
+            padding: 30px;
+            animation: morphing 16s linear infinite;
+            background: rgba(238, 238, 238, 0.7);
+
+            @keyframes morphing {
+                0% {
+                    border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+                }
+
+                12.5% {
+                    border-radius: 40% 70% 80% 50% / 80% 40% 60% 50%;
+                }
+
+                25% {
+                    border-radius: 70% 60% 60% 90% / 70% 80% 40% 90%;
+                }
+
+                37.5% {
+                    border-radius: 50% 50% 80% 40% / 50% 40% 60% 50%;
+                }
+
+                50% {
+                    border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%;
+                }
+
+                62.5% {
+                    border-radius: 40% 50% 50% 40% / 50% 70% 60% 50%;
+                }
+
+                75% {
+                    border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%;
+                }
+
+                87.5% {
+                    border-radius: 50% 70% 50% 40% / 80% 40% 60% 50%;
+                }
+
+                100% {
+                    border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+                }
+            }
 
             @media (max-width: 900px) {
-                padding: 40px 40px 0;
+                padding: 5px;
                 position: relative;
                 top: auto;
                 left: auto;
@@ -49,15 +85,18 @@
 
             h2 {
                 margin: 0;
-                padding-top: 70px;
-                padding-bottom: 70px;
+                padding-top: 20px;
+                padding-bottom: 30px;
                 font-weight: 600;
                 letter-spacing: 2px;
                 font-size: 3.1rem;
                 color: #1f211c;
 
+                @media (max-width: 900px) {
+                    padding: 5px;
+                }
+
                 @media (max-width: 640px) {
-                    margin-top: 23px;
                     font-size: 2.4rem;
                 }
             }
@@ -69,6 +108,7 @@
 
                 @media (max-width: 900px) {
                     max-width: inherit;
+                    padding: 0 15px;
                 }
             }
 
@@ -76,6 +116,8 @@
                 font-weight: 900;
                 letter-spacing: 2px;
                 font-size: 1.6rem;
+                text-align: right;
+                padding: 0 10px;
 
                 a {
                     padding-right: 110px;
@@ -132,59 +174,59 @@
                 }
             }
 
-            .section_2_r_border {
-                background: rgba(238, 238, 238, 0.7);
-                width: 650px;
-                height: 650px;
-                animation: morphing 16s linear infinite;
-                position: absolute;
-                top: 15%;
-                left: -25%;
-                z-index: -1;
+            // .section_2_r_border {
+            //     background: rgba(238, 238, 238, 0.7);
+            //     width: 650px;
+            //     height: 650px;
+            //     animation: morphing 16s linear infinite;
+            //     position: absolute;
+            //     top: 15%;
+            //     left: -25%;
+            //     z-index: -1;
 
-                @keyframes morphing {
-                    0% {
-                        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
-                    }
+            //     @keyframes morphing {
+            //         0% {
+            //             border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+            //         }
 
-                    12.5% {
-                        border-radius: 40% 70% 80% 50% / 80% 40% 60% 50%;
-                    }
+            //         12.5% {
+            //             border-radius: 40% 70% 80% 50% / 80% 40% 60% 50%;
+            //         }
 
-                    25% {
-                        border-radius: 70% 60% 60% 90% / 70% 80% 40% 90%;
-                    }
+            //         25% {
+            //             border-radius: 70% 60% 60% 90% / 70% 80% 40% 90%;
+            //         }
 
-                    37.5% {
-                        border-radius: 50% 50% 80% 40% / 50% 40% 60% 50%;
-                    }
+            //         37.5% {
+            //             border-radius: 50% 50% 80% 40% / 50% 40% 60% 50%;
+            //         }
 
-                    50% {
-                        border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%;
-                    }
+            //         50% {
+            //             border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%;
+            //         }
 
-                    62.5% {
-                        border-radius: 40% 50% 50% 40% / 50% 70% 60% 50%;
-                    }
+            //         62.5% {
+            //             border-radius: 40% 50% 50% 40% / 50% 70% 60% 50%;
+            //         }
 
-                    75% {
-                        border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%;
-                    }
+            //         75% {
+            //             border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%;
+            //         }
 
-                    87.5% {
-                        border-radius: 50% 70% 50% 40% / 80% 40% 60% 50%;
-                    }
+            //         87.5% {
+            //             border-radius: 50% 70% 50% 40% / 80% 40% 60% 50%;
+            //         }
 
-                    100% {
-                        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
-                    }
-                }
+            //         100% {
+            //             border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+            //         }
+            //     }
 
-                @media (max-width: 900px) {
-                    width: 300px;
-                    height: 300px;
-                }
-            }
+            //     @media (max-width: 900px) {
+            //         width: 300px;
+            //         height: 300px;
+            //     }
+            // }
         }
     }
 }

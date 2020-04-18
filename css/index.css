@@ -535,12 +535,6 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
   overflow: hidden;
 }
 
-@media (max-width: 960px) {
-  .section_2 {
-    background-attachment: scroll;
-  }
-}
-
 .section_2 .section_2_container {
   width: 1440px;
   margin: 0 auto;
@@ -587,8 +581,7 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
 
 @media (max-width: 900px) {
   .section_2 .section_2_container .section_2_l {
-    width: 100%;
-    margin-left: 0;
+    display: none;
   }
 }
 
@@ -601,127 +594,12 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
 
 .section_2 .section_2_container .section_2_r {
   position: absolute;
-  top: 0;
+  top: 25%;
   left: 0;
-}
-
-@media (max-width: 900px) {
-  .section_2 .section_2_container .section_2_r {
-    padding: 40px 40px 0;
-    position: relative;
-    top: auto;
-    left: auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .section_2 .section_2_container .section_2_r {
-    padding: 40px 15px 0;
-  }
-}
-
-.section_2 .section_2_container .section_2_r h2 {
-  margin: 0;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 3.1rem;
-  color: #1f211c;
-}
-
-@media (max-width: 640px) {
-  .section_2 .section_2_container .section_2_r h2 {
-    margin-top: 23px;
-    font-size: 2.4rem;
-  }
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(2) {
-  max-width: 460px;
-  margin-bottom: 60px;
-  line-height: 2;
-}
-
-@media (max-width: 900px) {
-  .section_2 .section_2_container .section_2_r :nth-child(2) {
-    max-width: inherit;
-  }
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) {
-  font-weight: 900;
-  letter-spacing: 2px;
-  font-size: 1.6rem;
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a {
-  padding-right: 110px;
-  position: relative;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a:visited {
-  color: #000000;
-  text-decoration: none;
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a:link {
-  color: #000000;
-  text-decoration: none;
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow {
-  width: 75px;
-  height: 7px;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  top: 6px;
-  right: 0;
-}
-
-@media (max-width: 640px) {
-  .section_2 .section_2_container .section_2_r :nth-child(3) a .arrow {
-    width: 50px;
-  }
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow::after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75px;
-  height: 7px;
-  background: url("../../images/section_2/arrow01.png") no-repeat right top;
-  background-size: 75px auto;
-}
-
-.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75px;
-  height: 7px;
-  background: url("../../images/section_2/arrow01.png") no-repeat right top;
-  background-size: 75px auto;
-}
-
-.section_2 .section_2_container .section_2_r .section_2_r_border {
-  background: rgba(238, 238, 238, 0.7);
-  width: 650px;
-  height: 650px;
+  padding: 30px;
   -webkit-animation: morphing 16s linear infinite;
           animation: morphing 16s linear infinite;
-  position: absolute;
-  top: 15%;
-  left: -25%;
-  z-index: -1;
+  background: rgba(238, 238, 238, 0.7);
 }
 
 @-webkit-keyframes morphing {
@@ -785,10 +663,118 @@ nav .navbar_container .rwd_navbar_menu_burger ul li a:hover {
 }
 
 @media (max-width: 900px) {
-  .section_2 .section_2_container .section_2_r .section_2_r_border {
-    width: 300px;
-    height: 300px;
+  .section_2 .section_2_container .section_2_r {
+    padding: 5px;
+    position: relative;
+    top: auto;
+    left: auto;
   }
+}
+
+@media (max-width: 640px) {
+  .section_2 .section_2_container .section_2_r {
+    padding: 40px 15px 0;
+  }
+}
+
+.section_2 .section_2_container .section_2_r h2 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 3.1rem;
+  color: #1f211c;
+}
+
+@media (max-width: 900px) {
+  .section_2 .section_2_container .section_2_r h2 {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section_2 .section_2_container .section_2_r h2 {
+    font-size: 2.4rem;
+  }
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(2) {
+  max-width: 460px;
+  margin-bottom: 60px;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .section_2 .section_2_container .section_2_r :nth-child(2) {
+    max-width: inherit;
+    padding: 0 15px;
+  }
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 0 10px;
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a {
+  padding-right: 110px;
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow {
+  width: 75px;
+  height: 7px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+@media (max-width: 640px) {
+  .section_2 .section_2_container .section_2_r :nth-child(3) a .arrow {
+    width: 50px;
+  }
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 7px;
+  background: url("../../images/section_2/arrow01.png") no-repeat right top;
+  background-size: 75px auto;
+}
+
+.section_2 .section_2_container .section_2_r :nth-child(3) a .arrow::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 7px;
+  background: url("../../images/section_2/arrow01.png") no-repeat right top;
+  background-size: 75px auto;
 }
 
 .section_3 {
