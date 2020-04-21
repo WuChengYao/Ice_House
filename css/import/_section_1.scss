@@ -21,7 +21,8 @@
             text-align: center;
 
             @media (max-width:780px) {
-                background: linear-gradient(rgb(0, 255, 221), rgba(255, 255, 255, 0.3));
+                background-color: #fff;
+                // background: linear-gradient(rgb(0, 255, 221), rgba(255, 255, 255, 0.3));
                 width: 100%;
                 color: #000;
                 position: unset;
