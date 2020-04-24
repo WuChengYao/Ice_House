@@ -1,7 +1,7 @@
 .section_3 {
     width: 100%;
     // 假高
-    height: 100vh;
+    // height: 100vh;
     background: url('../../images/section_3/section_3.png') center / cover no-repeat fixed;
 
     @media (max-width: 960px) {
@@ -9,6 +9,29 @@
     }
 
     .section_3_container {
+        @include container();
         padding-top: 74px;
+
+        h2 {
+            margin: 0;
+            padding: 16px 10%;
+            font-size: 3rem;
+            
+
+            @media (max-width: 960px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 10%;
+            font-size: 2rem;
+            
+
+            @media (max-width: 960px) {
+                text-align: center;
+            }
+        }
     }
 }
