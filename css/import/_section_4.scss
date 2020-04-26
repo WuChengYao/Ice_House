@@ -1,0 +1,16 @@
+.section_4{
+    .section_4_container{
+        @include container();
+        .row{
+            .card{
+                img{
+                    padding: 5px;
+                    // height: 280px;
+                    @media (max-width:1200px) {
+                        // height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}

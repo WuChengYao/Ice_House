@@ -1,8 +1,6 @@
 .section_3 {
     width: 100%;
-    // 假高
-    // height: 100vh;
-    background: url('../../images/section_3/section_3.png') center / cover no-repeat fixed;
+    background: url('../images/section_3/section_3.png') center / cover no-repeat fixed;
 
     @media (max-width: 960px) {
         background-attachment: scroll;
