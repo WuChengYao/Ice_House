@@ -3,7 +3,6 @@
         @include container();
         display: flex;
         position: relative;
-        padding-top: 74px;
 
         @media (max-width:780px) {
             flex-wrap: wrap;
