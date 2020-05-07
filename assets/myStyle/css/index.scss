@@ -1,0 +1,40 @@
+// NAV
+
+// BANNER
+.mybanner {
+    background-image: url('../../images/banner/banner.png');
+}
+
+// news
+
+
+// aboutus
+.myaboutus {
+    background-image: url('../../images/aboutus/aboutus.png');
+
+    .media-container-column {
+        background-color: #4f4943f6;
+    }
+}
+
+// product
+.myproduct{
+
+}
+
+// information
+.myinformation{
+    background-image: url('../../images/information/information.png');
+    .container{
+        .row{
+            .mbr-white{
+                .mbr-text{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .mbr-arrow{
+        bottom: 5px;
+    }
+}

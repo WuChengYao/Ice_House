@@ -1,0 +1,24 @@
+.mybanner {
+  background-image: url("../../images/banner/banner.png");
+}
+
+.myaboutus {
+  background-image: url("../../images/aboutus/aboutus.png");
+}
+
+.myaboutus .media-container-column {
+  background-color: #4f4943f6;
+}
+
+.myinformation {
+  background-image: url("../../images/information/information.png");
+}
+
+.myinformation .container .row .mbr-white .mbr-text {
+  margin: 0;
+}
+
+.myinformation .mbr-arrow {
+  bottom: 5px;
+}
+/*# sourceMappingURL=index.css.map */
