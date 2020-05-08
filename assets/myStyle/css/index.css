@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.myinformation .container .row .mbr-white .mbr-text img {
+  width: 100%;
+}
+
 .myinformation .mbr-arrow {
   bottom: 5px;
 }
